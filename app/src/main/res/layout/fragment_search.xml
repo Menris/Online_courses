@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.ad.diploma_project.tabNavigation.Fragments.Search">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_learn_anything"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alpha="0.7"
+            android:scaleType="fitXY"
+            android:src="@drawable/learng_anything" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/cat_business"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_business"
+                        android:text="Business" />
+
+                    <Button
+                        android:id="@+id/cat_CS"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_computer"
+                        android:text=" Computer Science" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/cat_math"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_math"
+                        android:text="Math and Logic" />
+
+                    <Button
+                        android:id="@+id/cat_language"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_language"
+                        android:text="Languages" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/cat_humanity_and_art"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_art"
+                        android:text="Humanities and arts" />
+
+                    <Button
+                        android:id="@+id/cat_social_science"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_social_science"
+                        android:text="Social sciences" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/cat_personal_development"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_personal_dev"
+                        android:text="Personal development" />
+
+                    <Button
+                        android:id="@+id/cat_medicine_and_biology"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_medicine"
+                        android:text="Medicine" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

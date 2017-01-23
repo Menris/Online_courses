@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.project.ad.diploma_project.User_Information.UserInfo"
+    android:background="@drawable/back_user_main">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input_layout_firstName">
+
+        <EditText
+            android:id="@+id/input_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/input_layout_lastName"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup_user">
+
+        <RadioButton
+            android:id="@+id/radioButton_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/input_groupNumber"
+            android:text="I am teacher"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/radioButton_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="I am student"
+            android:layout_below="@+id/input_layout_lastName"
+            android:layout_alignStart="@+id/button_createUser" />
+
+    </RadioGroup>
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/input_lasts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup_user"
+        android:layout_alignParentStart="true">
+        <EditText
+
+            android:id="@+id/input_groupNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/input_layout_lastName"
+            android:visibility="invisible"
+            android:hint="Group Number"
+            android:inputType="textCapCharacters"/>
+    </android.support.design.widget.TextInputLayout>-->
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button_createUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create User"
+        android:hint="Group Number"
+        android:onClick="addUserToFirebase"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/radioGroup_user"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

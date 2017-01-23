@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.ad.diploma_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iitu_logo"
+        android:label="M-learning"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabNavigation.Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".User_Information.UserInfo" />
+        <activity android:name=".messages.Messages" />
+        <activity android:name=".messages.Messages_room" />
+        <activity android:name=".Categories.CoursesList" />
+        <activity android:name=".Categories.CoursePreview" />
+        <activity android:name=".messages.ChatRoom"></activity>
+    </application>
+
+</manifest>
